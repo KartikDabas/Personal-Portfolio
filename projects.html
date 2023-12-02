@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Kartik's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="projects">
+        <div class="project-section">
+          <p class="gray">Browse My</p>
+          <h1 class="project-title">Projects</h1>
+          <hr class="line" />
+          <div class="work-list">
+
+            <div class="work" data-aos="fade-up" data-aos-duration="2000">
+              <img src="images/ss-stroomix.png" alt="" />
+              <div class="layer">
+                <h3>Stroomix</h3>
+                <p>
+                  Stroomix is a streaming website that offers a variety of
+                  shows, movies, anime and more. Watch as much as you want,
+                  anytime you want - on thousands of internet-connected devices.
+                </p>
+                <a
+                  href="https://stroomix-streaming-website.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="work" data-aos="flip-right" data-aos-duration="2000">
+              <img src="images/real est ss.png" alt="" />
+              <div class="layer">
+                <h3>Homyz</h3>
+                <p>
+                  A dynamic website harnessing the power of MERN(MongoDB,
+                  Express.js, React, Node.js) technologies to transform the way
+                  people buy and explore properties.
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="work" data-aos="flip-right" data-aos-duration="2000">
+              <img src="images/ss-ecomm.png" alt="" />
+              <div class="layer">
+                <h3>BuyCart</h3>
+                <p>
+                  A dynamic e-commerce website using React.js, featuring
+                  responsive design, product catalog, user authentication, cart
+                  management, and secure payments. Elevate your online shopping
+                  experience with a modern, fast, and user-friendly interface.
+                </p>
+                <a href="https://e-commerce-react-buycart.netlify.app"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Programmer", "Designer", "FrontEnd Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
